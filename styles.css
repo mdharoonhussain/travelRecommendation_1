@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  .background-image {
+    /* Add styling for the background image */
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-simple-summer-tourism-travel-image_9073.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #about, #contact {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contactForm label, #contactForm input, #contactForm textarea {
+    margin: 10px 0;
+  }
+  
+  #contactForm button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
