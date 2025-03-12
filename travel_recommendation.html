@@ -1,97 +1,111 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Travel Recommendations</title>
-    <script src="travel_recommendation.js"></script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        nav li {
-            float: left;
-        }
-
-        nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            font-size: 3em;
-        }
-
-        p {
-            font-size: 1.5em;
-        }
-
-        .team-section {
-            text-align: center;
-            padding: 50px;
-        }
-
-        .team-member {
-            margin-top: 30px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="travel_recommendation.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-
-        <form>
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button type="button" id="searchButton">Search</button>
-            <button type="reset" id="clearButton">Reset</button>
-        </form>
-    </nav>
-
     <header>
-        <h1>Welcome to Travel Recommendations</h1>
-        <p>Explore amazing destinations and plan your next adventure.</p>
-        <div class="social-icons">
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">Instagram</a>
-        </div>
+        <h1>Explore the World</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#destinations">Travel Destinations</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
     </header>
-    <div id="resultsContainer"></div>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Travel Guide</h2>
+            <p>Discover the best places to visit across the world.</p>
+            <div class="popular-destinations">
+                <div class="destination">
+                    <img src="beach.jpg" alt="Beach">
+                    <p>Maldives - A tropical paradise</p>
+                </div>
+                <div class="destination">
+                    <img src="city.jpg" alt="City">
+                    <p>New York - The city that never sleeps</p>
+                </div>
+                <div class="destination">
+                    <img src="adventure.jpg" alt="Adventure">
+                    <p>Swiss Alps - For adventure seekers</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide travel guides to help you explore amazing destinations around the world.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@travelwebsite.com</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="destinations">
+            <h2>Travel Destinations</h2>
+            <h3>Beach Destinations</h3>
+            <div class="destination">
+                <img src="beach1.jpg" alt="Beach 1">
+                <p>Bali, Indonesia - Pristine beaches and vibrant culture</p>
+            </div>
+            <div class="destination">
+                <img src="beach2.jpg" alt="Beach 2">
+                <p>Hawaii, USA - A paradise with stunning beaches</p>
+            </div>
+            <h3>City Destinations</h3>
+            <div class="destination">
+                <img src="city1.jpg" alt="City 1">
+                <p>Paris, France - The city of love and lights</p>
+            </div>
+            <div class="destination">
+                <img src="city2.jpg" alt="City 2">
+                <p>Tokyo, Japan - A blend of tradition and technology</p>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            <h3>Adventurous Destinations</h3>
+            <div class="destination">
+                <img src="adventure1.jpg" alt="Adventure 1">
+                <p>Mount Everest - The ultimate challenge for climbers</p>
+            </div>
+            <div class="destination">
+                <img src="adventure2.jpg" alt="Adventure 2">
+                <p>Amazon Rainforest - A thrilling jungle experience</p>
+            </div>
+            <h3>Family Trip Destinations</h3>
+            <div class="destination">
+                <img src="family1.jpg" alt="Family 1">
+                <p>Disneyland - A magical experience for families</p>
+            </div>
+            <div class="destination">
+                <img src="family2.jpg" alt="Family 2">
+                <p>London, UK - A mix of history and modern attractions</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Website. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
