@@ -1,111 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Travel Book</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <h1>Explore the World</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
-                <li><input type="text" id="conditionInput" placeholder="Enter a destination">  </li>
-                <li><button id='btnSearch'>Search</button>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>Welcome to Our Travel Guide</h2>
-            <p>Discover the best places to visit across the world.</p>
-            <div class="popular-destinations">
-                <div class="destination">
-                    <img src="beach.jpg" alt="Beach">
-                    <p>Maldives - A tropical paradise</p>
-                </div>
-                <div class="destination">
-                    <img src="city.jpg" alt="City">
-                    <p>New York - The city that never sleeps</p>
-                </div>
-                <div class="destination">
-                    <img src="adventure.jpg" alt="Adventure">
-                    <p>Swiss Alps - For adventure seekers</p>
-                </div>
-            </div>
-        </section>
+   <nav>
+    <ul>
+     <li><h1>Travel Book</h1></li>
+     <li><img src="https://w0.peakpx.com/wallpaper/627/994/HD-wallpaper-times-square-nyc-night-streets-skyscrapers-american-cities-new-york-america-usa-city-of-new-york-city-r-thumbnail.jpg"></img></li>
+   </ul>
+<ul>
+  <li><a href="./index.html" id="home">Home </a></li>
+  <li><a href="./about_us.html" id="about">About Us </a></li>
+  <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+  <li><button id='btnSearch'>Search</button>
+  <li><button id='btnClear'>Clear</button>
+  </li>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We provide travel guides to help you explore amazing destinations around the world.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: contact@travelwebsite.com</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-
-        <section id="destinations">
-            <h2>Travel Destinations</h2>
-            <h3>Beach Destinations</h3>
-            <div class="destination">
-                <img src="beach1.jpg" alt="Beach 1">
-                <p>Bali, Indonesia - Pristine beaches and vibrant culture</p>
-            </div>
-            <div class="destination">
-                <img src="beach2.jpg" alt="Beach 2">
-                <p>Hawaii, USA - A paradise with stunning beaches</p>
-            </div>
-            <h3>City Destinations</h3>
-            <div class="destination">
-                <img src="city1.jpg" alt="City 1">
-                <p>Paris, France - The city of love and lights</p>
-            </div>
-            <div class="destination">
-                <img src="city2.jpg" alt="City 2">
-                <p>Tokyo, Japan - A blend of tradition and technology</p>
-            </div>
-        </section>
-
-        <section id="recommendations">
-            <h2>Recommendations</h2>
-            <h3>Adventurous Destinations</h3>
-            <div class="destination">
-                <img src="adventure1.jpg" alt="Adventure 1">
-                <p>Mount Everest - The ultimate challenge for climbers</p>
-            </div>
-            <div class="destination">
-                <img src="adventure2.jpg" alt="Adventure 2">
-                <p>Amazon Rainforest - A thrilling jungle experience</p>
-            </div>
-            <h3>Family Trip Destinations</h3>
-            <div class="destination">
-                <img src="family1.jpg" alt="Family 1">
-                <p>Disneyland - A magical experience for families</p>
-            </div>
-            <div class="destination">
-                <img src="family2.jpg" alt="Family 2">
-                <p>London, UK - A mix of history and modern attractions</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Travel Website. All rights reserved.</p>
-    </footer>
+</ul>
+</nav>
+<div class="container">
+    <div class="left-panel">
+        <div class="verticalLine"></div>
+        <div class="socialMedia">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+    <div class="right-panel">
+        <div id="resultsContainer"></div>
+        <div class="mainHomeText">
+            <h1>EXPLORE</br>DREAM</br>DESTINATION</h1>
+        </div>
+        <div>
+            <button id='btnBook'>Book Now</button>
+        </div>
+    </div>
+</div>
+<script src="./travel_recommendation.js"></script>
 </body>
-</html>
