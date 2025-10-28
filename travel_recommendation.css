@@ -1,0 +1,214 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #022211;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  nav h1 {
+    color: white;
+    display:inline-block
+  }
+
+  nav img{
+    height: 40px;
+    width: 40px;
+    display:inline-block
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  
+  /* Basic CSS for the form elements */
+  body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+    border-radius:16px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: #338036;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  body{
+    background-image: url("https://wallpapers.com/images/hd/manhattan-bridge-for-american-city-15kv1u87dvpd3531.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .verticalLine{
+    border-left: 2px solid white;
+    margin: 25px;
+    height: 200px;
+  }
+
+  i {
+    color:white;
+    padding-top: 20px;
+  }
+
+  .socialMedia{
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-between;
+  }
+
+  .container{
+    display:flex;
+    flex-direction: row;
+    color:white;
+  }
+
+  .right-panel{
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .right-panel h1{
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #022211;
+  }
+
+  .homeInfo{
+    max-width: 35ch;
+    text-shadow: 1px 1px 2px #022211;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+  .about-div > h1{
+    color: white;
+    /* border: 2px solid white; */
+  }
+
+  #page-container {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  #ourteam-container {
+    display: grid;
+    /* border: 2px solid white; */
+    margin: 30px auto;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+  }
+
+  #contact > h2 {
+    color: white;
+  }
+
+  /* CSS for Contact Us Form */
+
+/* Form container */
+#form-container {
+    margin: 20px;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for the form */
+  }
+  
+  /* Form styling */
+  form {
+    max-width: 600px; /* Set maximum width for the form */
+    margin: auto; /* Center the form horizontally */
+  }
+  
+  /* Form group (for label and input) */
+  .form-group {
+    margin-bottom: 15px; /* Spacing between form groups */
+  }
+  
+  /* Label styling */
+  .form-group label {
+    display: block; /* Display label as block element */
+    margin-bottom: 5px; /* Spacing below the label */
+    font-weight: bold; /* Bold text for labels */
+  }
+  
+  /* Input and textarea styling */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px); /* Full width input, minus padding */
+    padding: 10px; /* Padding for inputs */
+    font-size: 16px; /* Font size for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    min-height: 150px; /* Minimum height for textarea */
+  }
+  
+  /* Button styling */
+  .btn-form {
+    background-color: #338036; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .btn-form:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
+  
